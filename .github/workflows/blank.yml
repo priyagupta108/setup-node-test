@@ -17,11 +17,13 @@ jobs:
       - name: Use Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
+          node-version: 18.x
           cache: 'npm'
-        # env:
-        #  npm_config_workspaces: false
+        env:
+         npm_config_workspaces: false
 
       - run: |
           npm config get cache
           npm ci --verbose
+        env:
+         npm_config_workspaces: false 
