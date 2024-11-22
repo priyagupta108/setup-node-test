@@ -20,10 +20,10 @@ jobs:
           node-version: 18.x
           cache: 'npm'
         env:
-         npm_config_include_workspace_root: false
+         npm_config_workspaces: false
 
       - run: |
           npm config get cache
           npm ci --verbose
         env:
-         npm_config_workspaces: false 
+         npm_config_workspaces: false
