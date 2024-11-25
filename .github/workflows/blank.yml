@@ -20,7 +20,8 @@ jobs:
           node-version: 18.x
           cache: 'npm'
         env:
-         npm_config_ignore_workspace: true
+         # npm_config_ignore_workspace: true
+         npm_config_workspace: ''
         #  npm_config_workspaces: false
         #  npm_config_include_workspace_root: true
 
