@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-         npm config get cache --workspace=packages/b
+         npm config get cache -w=packages/b
         
         
       - name: Use Node
