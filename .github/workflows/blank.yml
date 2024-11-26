@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          npm config get cache --w=a
+          npm run test --w=a
         
         
       - name: Use Node
