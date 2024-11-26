@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-         npm install -w=packages/b
+         npm run test -w=packages/b
         
         
       - name: Use Node
