@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           npm config get cache --workspace=a
-          npm ci --verbose
+        
         
       - name: Use Node
         uses: actions/setup-node@v4
